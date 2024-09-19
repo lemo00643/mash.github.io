@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+
+        body {
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(ac.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #f4f4f4;
+        }
+
+        .login-panel {
+            width: 300px;
+            padding: 20px;
+            background: transparent;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(black);
+            margin: 20px 50px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            justify-content: center;
+        }
+
+            .login-panel input, .login-panel select {
+                width: 100%;
+                padding: 2px;
+                background-color: transparent;
+                margin-bottom: 1px;
+                border: 1px solid black;
+                border-radius: 5px;
+                box-sizing: border-box;
+                opacity: 50%;
+            }
+
+            .login-panel h2 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .login-panel button {
+                width: 100%;
+                margin-left: 70px;
+                margin-top: 10px;
+                padding: 5px;
+                border-radius: 20px;
+                cursor: pointer;
+                background-color: darkgrey;
+                color: black;
+            }
+
+        ::placeholder {
+            color: black;
+            font-size:smaller;
+            opacity: 50%;
+ 
+        }
+
+        .login-panel td {
+            color: black;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="development.png" sizes="16x16">
+</head>
+<body>
+   
+    <div class="login-panel">
+        <h2>Student Registration Form</h2>
+
+    <form action="register.php" method="post">
+        <table>
+            <tr>
+                <td>Student Name:</td>
+                <td><input type="text" name="student_name" placeholder="Enter your name" required></td>
+            </tr>
+
+            <tr>
+                <td>Father's Name:</td>
+                <td><input type="text" name="father_name" placeholder="Enter your father's name" required></td>
+            </tr>
+
+            <tr>
+                <td>Mother's Name:</td>
+                <td><input type="text" name="mother_name" placeholder="Enter your mother's name" required></td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="text" name="birthdate" placeholder="Enter your birthdate" required></td>
+            </tr>
+
+
+            <tr>
+                <td>Street:</td>
+                <td><input type="text" name="street" placeholder="Enter your street" required></td>
+            </tr>
+
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="city" placeholder="Enter your city" required></td>
+            </tr>
+
+            <tr>
+                <td>Barangay:</td>
+                <td><input type="text" name="barangay" placeholder="Enter your barangay" required></td>
+            </tr>
+
+            <tr>
+                <td>Municipality:</td>
+                <td><input type="text" name="municipality" placeholder="Enter your municipality" required></td>
+            </tr>
+
+            <tr>
+                <td>Region:</td>
+                <td><input type="text" name="region" placeholder="Enter your region" required></td>
+            </tr>
+
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" name="country" placeholder="Enter your country" required></td>
+            </tr>
+
+            <tr>
+                <td>Nationality:</td>
+                <td><input type="text" name="nationality" placeholder="Enter your nationality" required></td>
+            </tr>
+
+            <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <select  style="width: 100%;" name="gender" required>
+                            <option value="" hidden>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+            </tr>
+
+            <tr>
+                <td>Religion:</td>
+                <td><input type="text" name="religion" placeholder="Enter your religion" required></td>
+            </tr>
+
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="phone" placeholder="Enter your phone number" required></td>
+            </tr>
+
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="email" name="email" placeholder="Enter your email address" required></td>
+            </tr>
+
+            <tr>
+                <td>Blood Type:</td>
+                <td><input type="text" name="bloodtype" placeholder="Enter your blood type" required></td>
+            </tr>
+
+            <tr>
+                <td>Course:</td>
+                <td><input type="text" name="course" placeholder="Enter your course" required></td>
+            </tr>
+
+            <tr>
+                <td>Marital Status:</td>
+                <td>
+                    <select style="width: 100%;" type name="marital_status" required>
+                        <option value="" hidden>Select Status</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="submit">REGISTER</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
